@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KRADHA — Ethnic Wear</title>
+  <meta name="description" content="KRADHA — Sarees, Anarkali Suits, Straight Suits and Sharara Sets.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="announcement">COD AVAILABLE &nbsp; | &nbsp; FREE DELIVERY &nbsp; | &nbsp; EASY SIZE EXCHANGE</div>
+
+  <header class="site-header">
+    <button class="mobile-menu" id="mobileMenuBtn" aria-label="Open menu">☰</button>
+    <a class="brand" href="#" data-page="home">KRADHA</a>
+
+    <nav class="main-nav" id="mainNav">
+      <button data-category="all">SHOP</button>
+      <button data-category="anarkali">ANARKALI SUITS</button>
+      <button data-category="straight">STRAIGHT SUITS</button>
+      <button data-category="sharara">SHARARA SUITS</button>
+      <button data-category="saree">SAREES</button>
+      <button data-category="chikankari">CHIKANKARI</button>
+      <button data-category="new">NEW ARRIVALS</button>
+    </nav>
+
+    <div class="header-actions">
+      <button id="searchToggle" title="Search">⌕</button>
+      <button id="profileBtn" title="Account">♙</button>
+      <button id="wishlistBtn" title="Wishlist">♡ <span class="count" id="wishCount">0</span></button>
+      <button id="cartBtn" title="Cart">🛍 <span class="count" id="cartCount">0</span></button>
+    </div>
+  </header>
+
+  <div class="search-bar" id="searchBar">
+    <input id="searchInput" type="search" placeholder="Search sarees, suits, anarkali...">
+  </div>
+
+  <main>
+    <section class="hero" id="homeHero">
+      <div class="hero-copy">
+        <p class="eyebrow">THE KRADHA EDIT</p>
+        <h1>Timeless Indian<br><em>Elegance</em></h1>
+        <p>Handpicked ethnic silhouettes for festive days, celebrations and everything in between.</p>
+        <button class="primary-btn" data-category="all">SHOP COLLECTION</button>
+      </div>
+      <div class="hero-art">
+        <div class="hero-card hero-card-one"><span>ANARKALI</span></div>
+        <div class="hero-card hero-card-two"><span>SAREES</span></div>
+        <div class="hero-card hero-card-three"><span>SUITS</span></div>
+      </div>
+    </section>
+
+    <section class="category-row">
+      <button data-category="anarkali"><b>ANARKALI</b><span>Flowy & festive</span></button>
+      <button data-category="straight"><b>STRAIGHT SUITS</b><span>Elegant everyday</span></button>
+      <button data-category="sharara"><b>SHARARA</b><span>Celebration edit</span></button>
+      <button data-category="saree"><b>SAREES</b><span>Classic drapes</span></button>
+      <button data-category="chikankari"><b>CHIKANKARI</b><span>Handcrafted charm</span></button>
+    </section>
+
+    
+<section class="type-cloud">
+  <div class="type-heading"><p class="eyebrow">SHOP BY TYPE</p><h2>EVERY ETHNIC SILHOUETTE</h2></div>
+  <div class="type-buttons">
+    <button data-category="saree">Banarasi Sarees</button>
+    <button data-category="saree">Kanjivaram Sarees</button>
+    <button data-category="saree">Organza Sarees</button>
+    <button data-category="saree">Chanderi Sarees</button>
+    <button data-category="saree">Georgette Sarees</button>
+    <button data-category="saree">Cotton Sarees</button>
+    <button data-category="saree">Linen Sarees</button>
+    <button data-category="saree">Bandhani Sarees</button>
+    <button data-category="anarkali">Anarkali Suits</button>
+    <button data-category="straight">Straight Suits</button>
+    <button data-category="sharara">Sharara Suits</button>
+    <button data-category="sharara">Gharara Suits</button>
+    <button data-category="palazzo">Palazzo Suits</button>
+    <button data-category="punjabi">Patiala Suits</button>
+    <button data-category="punjabi">Punjabi Suits</button>
+    <button data-category="frock">Frock Suits</button>
+    <button data-category="chikankari">Chikankari Suits</button>
+    <button data-category="cape">Cape Suits</button>
+  </div>
+</section
+
+<section class="collection" id="collection">
+      <div class="breadcrumb">HOME <span>/</span> <strong id="crumb">SHOP</strong></div>
+      <div class="collection-heading">
+        <div>
+          <p class="eyebrow">KRADHA COLLECTION</p>
+          <h2 id="collectionTitle">SHOP ETHNIC WEAR</h2>
+          <p class="subtext" id="productCountText">12 products</p>
+        </div>
+        <button class="filter-mobile-btn" id="filterMobileBtn">FILTERS +</button>
+      </div>
+
+      <div class="shop-layout">
+        <aside class="filters" id="filters">
+          <div class="filter-title">FILTER BY <button id="clearFilters">CLEAR ALL</button></div>
+
+          <div class="filter-group">
+            <h3>AVAILABILITY</h3>
+            <label><input type="checkbox" class="availability" value="in"> In stock</label>
+            <label><input type="checkbox" class="availability" value="out"> Out of stock</label>
+          </div>
+
+          <div class="filter-group">
+            <h3>PRICE</h3>
+            <div class="price-inputs">
+              <input id="minPrice" type="number" min="0" placeholder="₹ Min">
+              <input id="maxPrice" type="number" min="0" placeholder="₹ Max">
+            </div>
+          </div>
+
+          <div class="filter-group">
+            <h3>SIZE</h3>
+            <label><input type="checkbox" class="sizeFilter" value="S"> S</label>
+            <label><input type="checkbox" class="sizeFilter" value="M"> M</label>
+            <label><input type="checkbox" class="sizeFilter" value="L"> L</label>
+            <label><input type="checkbox" class="sizeFilter" value="XL"> XL</label>
+            <label><input type="checkbox" class="sizeFilter" value="2XL"> 2XL</label>
+          </div>
+        </aside>
+
+        <div class="products-area">
+          <div class="toolbar">
+            <button id="mobileFilterToggle">FILTERS</button>
+            <span id="resultLabel">12 PRODUCTS</span>
+            <label>SORT BY
+              <select id="sortSelect">
+                <option value="featured">Featured</option>
+                <option value="relevant">Most relevant</option>
+                <option value="best">Best selling</option>
+                <option value="az">Alphabetically A-Z</option>
+                <option value="za">Alphabetically Z-A</option>
+                <option value="low">Price low-high</option>
+                <option value="high">Price high-low</option>
+                <option value="new">Date new-old</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="product-grid" id="productGrid"></div>
+          <div class="empty-state" id="noResults" hidden>
+            <h3>No products found</h3>
+            <p>Try another search or remove a filter.</p>
+            <button class="primary-btn" id="resetSearch">VIEW ALL</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-strip">
+      <div><strong>FREE DELIVERY</strong><span>Across India</span></div>
+      <div><strong>COD AVAILABLE</strong><span>Pay at your doorstep</span></div>
+      <div><strong>SIZE EXCHANGE</strong><span>Easy exchange support</span></div>
+      <div><strong>SECURE CHECKOUT</strong><span>Safe & simple shopping</span></div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand">KRADHA</div>
+    <div class="footer-cols">
+      <div><h4>SHOP</h4><button data-category="anarkali">Anarkali Suits</button><button data-category="straight">Straight Suits</button><button data-category="sharara">Sharara Suits</button><button data-category="saree">Sarees</button></div>
+      <div><h4>HELP</h4><button id="contactBtn">Contact Us</button><button id="trackBtn">Track Your Order</button><button id="policyBtn">Shipping & Returns</button></div>
+      <div><h4>KRADHA</h4><p>Ethnic wear made for modern Indian celebrations.</p><p class="footer-note">© 2026 KRADHA. All rights reserved.</p></div>
+    </div>
+  </footer>
+
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+
+  <aside class="drawer" id="cartDrawer">
+    <div class="drawer-head"><h2>YOUR CART</h2><button class="closeDrawer">×</button></div>
+    <div id="cartItems"></div>
+    <div class="cart-bottom">
+      <div class="subtotal"><span>SUBTOTAL</span><strong id="cartSubtotal">₹0</strong></div>
+      <p>Shipping calculated at checkout. Free delivery currently available.</p>
+      <button class="primary-btn full" id="checkoutBtn">CHECKOUT</button>
+    </div>
+  </aside>
+
+  <aside class="drawer" id="wishlistDrawer">
+    <div class="drawer-head"><h2>WISHLIST</h2><button class="closeDrawer">×</button></div>
+    <div id="wishlistItems"></div>
+  </aside>
+
+  <div class="modal" id="productModal">
+    <div class="modal-card product-modal-card">
+      <button class="modal-close" data-close="productModal">×</button>
+      <div id="productDetail"></div>
+    </div>
+  </div>
+
+  <div class="modal" id="profileModal">
+    <div class="modal-card small-modal">
+      <button class="modal-close" data-close="profileModal">×</button>
+      <p class="eyebrow">MY ACCOUNT</p><h2 id="authTitle">CREATE ACCOUNT</h2>
+      <input id="authName" placeholder="Your name" autocomplete="name">
+      <input id="authEmail" type="email" placeholder="Email address" autocomplete="email">
+      <input id="authPassword" type="password" placeholder="Password (minimum 6 characters)" autocomplete="current-password">
+      <button class="primary-btn full" id="saveAccount">CREATE ACCOUNT</button>
+      <button class="auth-link" id="forgotPassword" type="button">FORGOT PASSWORD?</button>
+      <p class="auth-switch" id="authSwitch"></p>
+      <button class="primary-btn full" id="logoutBtn" type="button" style="display:none">LOG OUT</button>
+      <p class="modal-note" id="authMessage"></p>
+      <p class="modal-note" id="accountMessage"></p>
+    </div>
+  </div>
+
+  <div class="modal" id="checkoutModal">
+    <div class="modal-card small-modal">
+      <button class="modal-close" data-close="checkoutModal">×</button>
+      <p class="eyebrow">CHECKOUT</p><h2>DELIVERY DETAILS</h2>
+      <input id="custName" placeholder="Full name">
+      <input id="custPhone" placeholder="Mobile number">
+      <textarea id="custAddress" placeholder="Complete delivery address"></textarea>
+      <div class="payment-choice"><b>PAYMENT</b><label><input type="radio" name="payment" value="cod" checked> Cash on Delivery</label><label><input type="radio" name="payment" value="online"> Online payment</label></div>
+      <button class="primary-btn full" id="placeOrder">PLACE ORDER</button><p class="modal-note">After placing the order, the complete order summary can be sent directly to the KRADHA owner on WhatsApp.</p>
+      <p class="modal-note">Online payment gateway can be connected when the backend is added.</p>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="script.js"></script>
+</body>
+</html>
